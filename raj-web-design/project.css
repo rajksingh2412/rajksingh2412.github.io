@@ -1,0 +1,327 @@
+body {
+  font-family: arail, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+/*global*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.dark {
+  padding: 15px;
+  background-color: #35424a;
+  color: #ffffff;
+  margin: 10px 0px;
+}
+/*header*/
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  display: inline;
+  float: left;
+  padding: 0px 20px 0px 20px;
+}
+header #branding {
+  float: left;
+}
+header #branding h1 {
+  margin: 0px;
+}
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+header .highlight,
+header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+/*showcase*/
+#showcase {
+  min-height: 400px;
+  background: url("xyz.jpg") -100px;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+#showcase h1 {
+  font-size: 55px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+#showcase p {
+  font-size: 20px;
+}
+#newsletter {
+  padding: 15px;
+  color: #ffffff;
+  background: #35424a;
+}
+#newsletter h1 {
+  float: left;
+}
+#newsletter form {
+  float: right;
+  margin-top: 25px;
+}
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+.button_1 {
+  height: 38px;
+  background: #e8491d;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+/*boxes*/
+#boxes {
+  margin-top: 20px;
+}
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+#boxes .box img {
+  width: 90px;
+}
+/*sidebar*/
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+/*main col*/
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+/*services*/
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 3px;
+  margin-bottom: 5px;
+  background: #6e6e6e;
+}
+
+/*footer*/
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
+}
+
+/* for slideshow feedback */
+
+.slideshow-container {
+  position: relative;
+  background: #35424a;
+  color: #f4f4f4;
+  opacity: 0.8;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 10px;
+  background: #35424a;
+  opacity: 0.5;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+q {
+  font-style: italic;
+}
+
+.author {
+  color: cornflowerblue;
+}
+
+/* chat box for front page */
+.open-button {
+  background-color: #e8491d;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 140px;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #e8491d;
+  color: white;
+  padding: auto;
+  float: center;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-bottom: 5px;
+  margin-left: 31%;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: #35424a;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+/*media queries*/
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header {
+    padding-bottom: 20px;
+  }
+  #showcase h1 {
+    margin-top: 40px;
+  }
+  #newsletter button,
+  .quote button {
+    display: block;
+    width: 100%;
+  }
+  #newsletter form input[type="email"],
+  .quote input,
+  .quote textarea {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

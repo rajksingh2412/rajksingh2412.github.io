@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Raj </span>web design</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="project.html">home</a></li>
+            <li><a href="about.html">about </a></li>
+            <li><a href="services.html">services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>affordable professional website</h1>
+        <p>
+          GSM is a standard developed by the European Telecommunications
+          Standards Institute (ETSI) to describe the protocols
+        </p>
+      </div>
+    </section>
+    <section id="newsletter">
+      <div class="container">
+        <h1>subsribe to my newletter</h1>
+        <form>
+          <input type="email" placeholder="email..." />
+          <button type="submit" class="button_1">subscribe</button>
+        </form>
+      </div>
+    </section>
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="Elogo.jpg" />
+          <h3>html markup</h3>
+          <p>
+            GSM is a standard developed by the European Telecommunications
+            Standards Institute (ETSI) to describe the protocols
+          </p>
+
+          <p></p>
+        </div>
+
+        <div class="box">
+          <img src="ilogo.png" />
+          <h3>css</h3>
+          <p>
+            GSM is a standard developed by the European Telecommunications
+            Standards Institute (ETSI) to describe the protocols
+          </p>
+
+          <p></p>
+        </div>
+
+        <div class="box">
+          <img src="slogo.jpg" />
+          <h3>graphic design</h3>
+          <p>
+            GSM is a standard developed by the European Telecommunications
+            Standards Institute (ETSI) to describe the protocols
+          </p>
+
+          <p></p>
+        </div>
+      </div>
+      <!-- for feedback -->
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <q>
+            A review is only as great as its response. The right 
+            response can make a 5-star review even more powerful and 
+            minimize the damage of a negative review. </ >
+          <p class="author">- Rajat Singh</p>
+        </div>
+
+        <div class="mySlides">
+          <q></q>
+            But man is not made for defeat. A man can be destroyed but not
+            defeated.</q>
+          
+          <p class="author">- Ernest Hemingway</p>
+        </div>
+
+        <div class="mySlides">
+          <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+          <p class="author">- Thomas A. Edison</p>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <!-- chat box -->
+      <button class="open-button" onclick="openForm()">
+        <i class="material-icons" style="font-size: 36px;">chat</i>
+      </button>
+
+      <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Chat</h1>
+
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="Type message.." name="msg" required></textarea>
+
+          <button type="submit" class="btn">
+            <i class="material-icons" style="font-size: 36px;">import_export</i>
+          </button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            <i class="material-icons" style="font-size: 36px;">cancel</i>
+          </button>
+        </form>
+      </div>
+    </section>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+    <footer>
+      all right reserved
+    </footer>
+    <script src="project.js"></script>
+  </body>
+</html>
