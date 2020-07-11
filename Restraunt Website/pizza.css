@@ -1,0 +1,159 @@
+*{
+  margin:0px;
+  padding:0px;
+  
+}
+
+.navbar{
+  background-color: black;
+  opacity:0.8;
+  color: whitesmoke;
+  margin-bottom: 0px;
+  font-size: 16px;
+
+}
+.nav li a{
+  font-size: 18px;
+  color:whitesmoke;
+  font-weight: bold;
+  margin:auto;
+
+}
+.nav li a:hover{
+  font-size: 18px;
+  color:black;
+  background-color: #f4511e;
+  font-weight: bold;
+  opacity:1;
+
+}
+.offer{
+  background-image: url("offer.jpeg");
+  color:yellow;
+ 
+}
+.jumbotron{
+  /**background-image:url('pizza-back.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;**/
+  background-image: url('pics/cover1.jpg');
+  opacity:0.8;
+  background-repeat: no-repeat;
+  background-size:cover; 
+  color: white;
+  margin-top: 0px;
+  padding-top:150px;
+  height:500px;
+}
+.food{
+  
+  padding-right:60px;
+}
+.title{
+  font-family: 'Unlock', cursive;
+ font-size: 120px;
+ color:white;
+ text-decoration-line: overline;
+ text-decoration-style: solid ;
+}
+.tilte a{
+  color:black;
+}
+.wrapper,.food-list{
+  background-color: #f5f5ef;
+  margin:auto;
+  display: flex;
+  
+}
+.card{
+  margin:1%;
+  border:5px solid rgb(34,193,19,0.1);
+  box-shadow: 2px 2px 5px  rgb(38,35,32 ,0.5);
+  width:30%;
+  background: white;
+  
+}
+.card:hover{
+  box-shadow: 4px 4px 10px black;
+  z-index: 1;
+  
+}
+.card img{
+  height:100%;
+  width:100%;
+}
+.food-list{
+  width:80%;
+  padding:10px;
+  margin:auto;
+}
+.food-list img{
+  width:100%;
+  height:80%;
+  
+}
+.card p{
+  height: 4em;
+  font: 1em sans-serif;
+  color:grey;
+  background: #f3f3f3;
+}
+.order{
+  width:80px;
+  height:40px;
+  margin-left: 40%;
+  margin-bottom: 20px;
+  background-color:#f4511e;
+  color: #f3f3f3;
+  text-decoration: none;
+}
+.top{
+  width:100px;
+  height:50px;
+  font-size: 15px;
+  color:black;
+  font-weight: bold;
+}
+.carousel{
+  height:100%;
+  padding: 0px;
+  width:100%;
+  margin:auto;
+}
+.add{
+  margin-top:50px;
+  margin-left:200px;
+  margin-bottom:20px;
+}
+
+.right-shift{
+  float: right;
+ padding-right:25px;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+   ;
+}
+.card-title{
+  padding-top:5px;
+  margin-left:25px;
+}
+
+.restraunts{
+  background-color: black;
+}
+.rest-img1,.rest-img2{
+  display:inline-block;
+ float:left;
+  height:100px;
+  width:100px;
+  padding:50px;
+  margin:80px;
+  margin-left:70px;
+  margin-bottom:30px;
+  margin-top:40px;
+  
+}
+.res-head{
+  margin-top:30px;
+}
