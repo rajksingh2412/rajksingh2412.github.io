@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+    <!-- google api -->
+    <!-- AIzaSyB9Bog2rqcVDVuGpFL2s7G3_4lZc9WXszE -->
+
+  </head>
+  <body id="prac">
+      <h1 class="title"> Weather App</h1>
+    <form id="for-search">
+      <input
+        type="search"
+        placeholder="enter the city name"
+        id="search-input"
+        required
+      />
+      <button id="search-button">search</button>
+    </form>
+
+    <div id="container">
+      
+            <div id="left-side">
+                    <div id="mintemp">
+                        <h1><span id="minnn">temp</span>&#176</h1>
+                        <p>MIN</p>
+                    </div>    
+            </div>
+
+
+            <div id="middle-side">
+                <div id="location">
+                    <p>location</p>
+                </div>
+                <div id="temp">
+                    <p><span id="temp-val">t</span>&#176</p>
+                </div>
+                <div id="climate">
+                    <p>climate</p>
+                </div>
+            </div>
+
+            <div id="right-side">
+                <div id="maxtemp">
+                    <h1><span id="maxxx">temp</span>&#176 </h1> 
+                    <p>MAX</p>
+                </div>
+            </div>
+
+      <div id="table-middle">
+        <table id="table-whv">
+            <tr>
+                <th>Wind Speed</th>
+                <th>Humidity</th>
+                <th>Visibility</th>
+            </tr>
+            <tr>
+                <td id="wind">---</td>
+                <td id="humid">---</td>
+                <td id="visible">---</td>
+            </tr>
+        </table>
+    </div>
+    
+
+      <div id="bottom-side" >
+          <table>
+            <tr id="pollution-name">
+                <th colspan="5">Pollution Level</th>
+            </tr>
+            <tr id= "gas-values" >
+                <td id = "co">100</td>
+                <td id = "no">30</td>
+                <td id = "o3">40</td>
+                <td id = "no2">20</td>
+                <td id = "so2">10</td>
+              </tr>
+              <tr id= "gas-names">
+                <td>Carbon Monoxide</td>
+                <td>Nitric Oxide</td>
+                <td>Ozone</td>
+                <td>Nitrogen Dioxide</td>
+                <td>Sulfur Dioxide</td>
+              </tr>
+          </table>
+
+      </div>
+    </div>
+    <script>
+        
+        function activateSearch(){
+            //var input = document.getElementById("search-input"); -->
+            autocomplete = new google.maps.places.Autocomplete(
+                document.getElementById("search-input"),
+                {
+                  types: ["geocode"],
+                  /*componentRestrictions: {
+                  country: "USA"
+                 }*/
+                }
+            );
+        }
+    </script>
+    
+       
+         
+       
+    
+    <script src="script.js"></script>
+    <!-- <script src="pollution.js"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCdGv5cjpA0dMUCSolCf89tl_vgccGvsu0&callback=activateSearch" async defer></script>
+  </body>
+</html>
